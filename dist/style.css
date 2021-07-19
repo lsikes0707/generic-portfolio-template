@@ -1,0 +1,32 @@
+#welcome-section {
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100%;
+}
+
+#navbar {
+  font-size: 10vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #deb5ff;
+  box-shadow: 0 2px 0 rgba(0 0 0 / 40%);
+  z-index: 10;
+  grid-column-gap: 20px;
+}
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
